@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 'Pi + e'
+title: '不寫下來會忘記'
 subtitle: ''
 description: ''
 keywords:
-author: Peixuan
-language: zh
+author: Pi + e
+language: zh-TW
 timezone: 'Asia/Taipei'
 
 # URL
@@ -42,6 +42,9 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 highlight:
