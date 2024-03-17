@@ -1,209 +1,186 @@
-<!DOCTYPE html>
-<html lang="zh" >
-<head>
-    <meta charset="utf-8">
-<meta name="renderer" content="webkit">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
-
-    <link rel="dns-prefetch" //cdn.jsdelivr.net>
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
-
-
-
-    
-<link rel="stylesheet" href="/blog_1/css/prism-m.css">
-
-    
-
-
-
-<meta name="theme-color" content="#3F51B5">
-
-
-<style>
-    html,body{scroll-behavior:smooth;min-height:100vh}
-    blockquote>strong>a{word-break:break-all}
-    .mdui-hoverable:hover,.mdui-hoverable:focus{-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;}
-    .mdui-card-primary-title a{text-decoration:none !important}
-    .page-number{display:none !important}
-    .mdui-container-fluid{transition:opacity .4s}
-    
-        body{background-color: #f6f6f6}
-
-    
-</style>
-    
-    <title>不寫下來會忘記</title>
-    <link rel="canonical" href="https://peipeixuan.github.io/blog_1/blog_1/">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="不寫下來會忘記">
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Pei的開發備忘錄</title><meta name="author" content="Pi + e"><meta name="copyright" content="Pi + e"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hi! 我是一位定位不明的小小工程師XD這裡記錄了我的開發筆記！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pei的開發備忘錄">
 <meta property="og:url" content="https://peipeixuan.github.io/blog_1/index.html">
-<meta property="og:site_name" content="不寫下來會忘記">
+<meta property="og:site_name" content="Pei的開發備忘錄">
+<meta property="og:description" content="Hi! 我是一位定位不明的小小工程師XD這裡記錄了我的開發筆記！">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="Pi + e">
 <meta name="twitter:card" content="summary">
-<meta name="generator" content="Hexo 6.3.0"></head>
-<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-appbar-with-toolbar ">
-    <div class="mdui-theme-layout-light">
-    <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
-    <div class="mdui-toolbar">
-        <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
-        <a href="/blog_1/" class="mdui-typo-title">不寫下來會忘記</a>
-        <div class="mdui-toolbar-spacer"></div>
-        
-        <a href="/blog_1/search/" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">search</i></a>
-        
-    </div>
-</header>
-    <aside class="mdui-drawer mdui-drawer-close">
-    <nav class="mdui-list" mdui-collapse="{accordion: true}">
-        <a href="/blog_1/about/"  class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-avatar">
-                
-                <i class="mdui-color-theme-primary mdui-icon material-icons">person</i>
-                
-            </div>
-            <div class="mdui-list-item-content">Pi + e</div>
-        </a>
-        <div class="mdui-divider"></div>
-        
-        <a href="/blog_1/" class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-            <div class="mdui-list-item-content">Home</div>
-        </a>
-        
-        <div class="mdui-collapse-item">
-            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
-                <div class="mdui-list-item-content">Archives</div>
-                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-            </div>
-            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                <a class="mdui-list-item mdui-ripple m-link" href="/blog_1/archives/2023/08/">八月 2023</a>
-            </div>
-        </div>
-        
-        <div class="mdui-collapse-item">
-            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
-                <div class="mdui-list-item-content">Categories</div>
-                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-            </div>
-            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                
-            </div>
-        </div>
-        
-    </nav>
-    <div class="mdui-divider"></div>
-    <footer class="mdui-m-l-2 mdui-m-t-1 mdui-typo mdui-text-color-theme-disabled">
-        <p class="mdui-m-b-0">
-            
-            ©
-            2023 Pi + e<br>
-            
-            Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a><br>
-            
-            Theme - <a href="https://github.com/kwaa/hexo-theme-m" rel="noreferrer" target="_blank"
-                mdui-tooltip="{position:'right', content: 'by 藍+85CD'}">M</a></p>
-            
-    </footer>
-</aside>
-    </div>
-    <div class="mdui-container-fluid mdui-center" style="max-width:720px">
-        <div class="mdui-theme-layout-light mdui-color-transparent">
-
-    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
-    
-    <div class="mdui-card-primary mdui-ripple">
-    <div class="mdui-card-primary-title">
-        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/blog_1/2023/08/15/nifi-component-executeSQL/">Nifi component - executeSQL 介紹</a>
-        
-    </div>
-    <div class="mdui-card-primary-subtitle mdui-typo">
-        
-        <span><a class="tag-none-link" href="/blog_1/tags/Nifi/" rel="tag">Nifi</a> -</span>
-        <span mdui-tooltip="{content:'Created: 2023-08-15 01:59<br>Updated: 2023-08-15 02:13'}">2023-08-15 -</span>
-        
-            <span>2023/08/15/nifi-component-executeSQL/</span>
-        
-    </div>
-</div>
-    
-    
-    <div class="mdui-divider"></div>
-    <div class="mdui-card-content mdui-typo">
-        
-        <p>當我們開始使用 Nifi ，最常使用的莫過於從資料庫撈取資料了。</p>
-<p>如果要使用 SQL 從關聯式資料庫取得資料，我們可以使用 ExecuteSQL 或是 ExecuteSQLRecord。</p>
-<p>這兩個的差異在於：ExecuteSQL 取出來的資料格式都是 Avro ， ExecuteSQLRecord 則是可以依照需求改變格式。</p>
-<blockquote>
-<p>Avro 是一種資料格式，在 Hadoop、 Kafka、 Spark 都可以使用。他有像 JSON 那樣易讀且可以儲存各種資料格式的特性，卻是使用 binary 的方式儲存，因此他的讀取速度是更快的。</p>
-</blockquote>
-<p>因此如果後續並沒有一定得使用 JSON 去處理資料的話，使用 ExecuteSQL 是更好的選擇。</p>
-<h2 id="參數"><a href="#參數" class="headerlink" title="參數"></a>參數</h2><figure class="mdui-img-fluid"><img src="/blog_1/2023/08/15/nifi-component-executeSQL/img1.png" alt="NIFI_executeSQL參數"class="mdui-img-rounded" loading="lazy"></figure>
-<p>以 ExecuteSQL 來說，有幾個參數是最重要的。</p>
-<ol>
-<li><p>Database Connection Pooling Service </p>
-<p> 這個參數要放 <strong>Controller Service</strong> ，才知道他要和哪個資料庫溝通。</p>
-</li>
-<li><p>SQL select query</p>
-<p> 這裡就是放 SQL query 的語句了，他會對你的 Database 執行此 query ，並將結果放到之後的 flowfile，且忽略前一個 processor 所傳來的所有東西；</p>
-<p> 不過這裡也可以是空的，那他就會期待你前一個 processor 是傳來一段 SQL，並且去執行他。 </p>
-</li>
-<li><p>SQL Pre-Query、SQL Post-Query</p>
-<p> 這兩個就是在你的主 Query 前後執行的語句。比如說你需要對有 foreign key 的資料表做一些動作。你就會需要在前面執行 <code>SET FOREIGN_KEY_CHECKS = 0;</code> ，在之後執行<code>SET FOREIGN_KEY_CHECKS = 1;</code> ，就可以放在這裡處理。</p>
-</li>
-<li><p>Max Rows Per Flow File</p>
-<p> 當我們把資料 SELECT 出來，他會被放到 flow filw 裡，這個參數定義的就是一個 flow file 要放多少 row 的資料。假如我的 SELECT 結果有 50 rows，這個欄位設定成 10 ，那就會獲得 5 個 flow file。那這個參數會影響到我們往下去處理的結果，假如我們想要再對這些結果做 query ，那可能會希望所有的資料可以一起處理，也有可能是我們希望可以一筆一筆做其他轉換，那可能就會設定成 1。</p>
-</li>
-</ol>
-<p>基本上以上就是我們在使用 executeSQL 最常會去調整的參數。</p>
-<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p><a target="_blank" rel="noopener" href="https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.21.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html">Nifi ExecuteSQL</a></p>
-<p><a target="_blank" rel="noopener" href="https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.21.0/org.apache.nifi.processors.standard.ExecuteSQLRecord/index.html">Nifi ExecuteSQLRecord</a></p>
-<p><a target="_blank" rel="noopener" href="https://community.cloudera.com/t5/Support-Questions/Difference-between-Nifi-QueryDatabaseTable-and/td-p/370170">Difference between Nifi QueryDatabaseTable and QueryDatabaseTableRecord
-</a></p>
-<p><a target="_blank" rel="noopener" href="https://sqream.com/blog/a-detailed-introduction-to-the-avro-data-format/">A Detailed Introduction to the Avro Data Format</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.confluent.io/blog/avro-kafka-data/">Why Avro for Kafka Data?
-</a></p>
-
-        
-        <blockquote class="mdui-m-x-0 mdui-m-t-4">
-    <strong>
-        Author: <a href="/blog_1/about/">Pi + e</a><br>
-        URL: <a href="https://peipeixuan.github.io/blog_1/2023/08/15/nifi-component-executeSQL/">https://peipeixuan.github.io/blog_1/2023/08/15/nifi-component-executeSQL/</a><br>
-        
-            This work is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> .
-        
-    </strong>
-</blockquote>
-        
-    </div>
-    
-</section>
-
-</div>
-
-    </div>
-    <a href="#" class="mdui-fab mdui-fab-fixed mdui-hidden-xs mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
-
-<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
-
-
-<script>
-    var $ = mdui.$;
-    function init(){
-        //
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/blog_1/img/favicon.png"><link rel="canonical" href="https://peipeixuan.github.io/blog_1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/blog_1/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/blog_1/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
     }
-    window.addEventListener("load", () => {
-        //
-        init()
-    }, {once: true});
-</script>
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Pei的開發備忘錄',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-03-17 19:01:21'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-</body>
-</html>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/blog_1/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/blog_1/tags/"><div class="headline">標籤</div><div class="length-num">1</div></a><a href="/blog_1/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog_1/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/blog_1/" title="Pei的開發備忘錄"><span class="site-name">Pei的開發備忘錄</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog_1/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/blog_1/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Pei的開發備忘錄</h1><div id="site_social_icons"><a class="social-icon" href="mailto:nana880911@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog_1/nifi-component-wait_notify/" title="Nifi component - wait &amp; notify 介紹">Nifi component - wait &amp; notify 介紹</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2023-08-15T06:36:34.000Z" title="發表於 2023-08-15 14:36:34">2023-08-15</time></span></div><div class="content">使用 Nifi 的時候，資料流就像水龍頭一樣，只要上面的 Connector 有資料，下面的 Processor 就會開始處理，雖然 Processor 也可以設定 cron 之類的來讓他定時處理，但如果我們是希望前面的 Processor 處理完全部資料再處理下一步資料可以怎麼做呢？
+使用 Notify &amp; Wait當時會用到這兩個 Processor 的情境是這樣：
+我們的資料庫分成資料呈現撈取的資料庫，以及資料流處理的資料庫，分成兩個資料庫的原因是避免資料流在處理時可能會暫時讓使用者讀不到資料，所以我只要在資料流處理完之後再把兩個資料庫對調就可以了。
+這時候遇到的問題就是：我要怎麼知道他已經處理完了？是否有機制可以通知我呢？
+（先偷看一下最後的成果，等下來解釋裡面的參數設定）
+前置需求要使用 Notify &amp; Wait ，我們需要在要當前的 Processor Group 新增兩個 Controller Service。
+
+DistributedMapCacheClientService
+DistributedMapCacheServer
+
+要注意這兩個 Cont ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog_1/nifi-component-executeSQL/" title="Nifi component - executeSQL 介紹">Nifi component - executeSQL 介紹</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2023-08-15T05:59:36.000Z" title="發表於 2023-08-15 13:59:36">2023-08-15</time></span></div><div class="content">當我們開始使用 Nifi ，最常使用的莫過於從資料庫撈取資料了。
+如果要使用 SQL 從關聯式資料庫取得資料，我們可以使用 ExecuteSQL 或是 ExecuteSQLRecord。
+這兩個的差異在於：ExecuteSQL 取出來的資料格式都是 Avro ， ExecuteSQLRecord 則是可以依照需求改變格式。
+
+Avro 是一種資料格式，在 Hadoop、 Kafka、 Spark 都可以使用。他有像 JSON 那樣易讀且可以儲存各種資料格式的特性，卻是使用 binary 的方式儲存，因此他的讀取速度是更快的。
+
+因此如果後續並沒有一定得使用 JSON 去處理資料的話，使用 ExecuteSQL 是更好的選擇。
+參數
+以 ExecuteSQL 來說，有幾個參數是最重要的。
+
+Database Connection Pooling Service 
+ 這個參數要放 Controller Service ，才知道他要和哪個資料庫溝通。
+
+SQL select query
+ 這裡就是放 SQL query 的語句了，他會對你的 Database 執行此 query ，並將結果放 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/blog_1/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Pi + e</div><div class="author-info__description">Hi! 我是一位定位不明的小小工程師XD這裡記錄了我的開發筆記！</div></div><div class="card-info-data site-data is-center"><a href="/blog_1/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/blog_1/tags/"><div class="headline">標籤</div><div class="length-num">1</div></a><a href="/blog_1/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:nana880911@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog_1/nifi-component-wait_notify/" title="Nifi component - wait &amp; notify 介紹">Nifi component - wait &amp; notify 介紹</a><time datetime="2023-08-15T06:36:34.000Z" title="發表於 2023-08-15 14:36:34">2023-08-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog_1/nifi-component-executeSQL/" title="Nifi component - executeSQL 介紹">Nifi component - executeSQL 介紹</a><time datetime="2023-08-15T05:59:36.000Z" title="發表於 2023-08-15 13:59:36">2023-08-15</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>標籤</span></div><div class="card-tag-cloud"><a href="/blog_1/tags/Nifi/" style="font-size: 1.1em; color: #999">Nifi</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>歸檔</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/blog_1/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>網站資訊</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章數目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">本站訪客數 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站總訪問量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最後更新時間 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-03-17T11:01:21.491Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Pi + e</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog_1/js/utils.js"></script><script src="/blog_1/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
